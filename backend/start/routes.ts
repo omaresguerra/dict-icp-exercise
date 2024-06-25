@@ -18,6 +18,7 @@ Route.get('/user/me', isAuth, UsersController.me);
 Route.post('/user/register', isAuth, UsersController.register);
 Route.post('/user/update', isAuth, UsersController.update);
 
+
 /*
 |--------------------------------------------------------------------------
 | Public Routes
@@ -26,5 +27,6 @@ Route.post('/user/update', isAuth, UsersController.update);
 
 Route.get('/health', ApisController.health);
 Route.get('/config', ApisController.config);
+
 
 export { Route as routes };
